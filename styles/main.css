@@ -136,18 +136,92 @@ a:visited {
 .project-intro {
 	padding: 50px;
 	background-color: #e5e5e2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.project-spacebar {
-	background-color: #e5e5e2;
+.button {
+	background-color: #D4503E;
+	border-radius: 2px;
+    height: 40px;
+    width: 200px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+	box-shadow: 1px 1px 5px #4A4A4A;
+	transition: all 0.2s;
 }
+
+.button:hover {
+  background: #ED6451;
+}
+
+.button a:link {
+	color: white;
+	text-decoration: none;
+}
+
+.button a:visited {
+	color: white;
+}
+
+
+/* projects: spacebar */
+
+.project-spacebar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.project-spacebar img {
+	position: absolute;
+	z-index: -1;
+}
+
+.p-spacebar-copy h4 {
+	margin: 0;
+}
+
+.p-spacebar-copy h5 {
+	margin: 0;
+}
+
+
+/* projects: paycrave */
 
 .project-paycrave {
 	background-color: #e5e5e2;
 }
 
+
+/* projects: brailleabcz */
+
 .project-brailleabcz {
 	background-color: #e5e5e2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.project-brailleabcz img {
+	width: 100px;
+	align-self: center;
+}
+
+.p-braille-copy {
+	align-self: center;
+}
+
+.p-braille-copy h4 {
+	margin: 0;
+}
+
+.p-braille-copy h5 {
+	margin: 0;
 }
 
 
@@ -156,36 +230,46 @@ a:visited {
 .about {
 	grid-column: 1 / -1;
 	display: grid;
+	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr;
+	grid-gap: 20px;	
+}
+
+/* about: worklife */
+
+.worklife {
+	display: flex;
 	background-color: #F6F6F6;
+}
+
+.worklife-copy {
+	padding: 50px 50px 20px 20px;
 }
 
 .worklife img {
 	width: 100%;
-	max-width: 720px;
-	float: left;
-	clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
-	shape-outside: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
-}
-
-.worklife-copy {
-	padding: 50px;
+	-webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
 }
 
 .worklife-caption {
 	display: none;
 }
 
+/* about: funfacts */
+
+.funfacts {
+	display: flex;
+	background-color: #F6F6F6;
+}
+
 .funfacts-copy {
-	padding: 50px;
+	padding: 50px 0px 50px 50px;
 }
 
 .funfacts img {
-	width: 100%;
-	float: right;
-	max-width: 720px;
-	clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-	shape-outside: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 }
 
 .funfacts-caption {
@@ -200,6 +284,26 @@ footer {
 	background-color: #D4503E;
 	height: 400px;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.connect {
+	padding-bottom: 20px;
+}
+
+.connect h3 {
+	margin: 0;
+}
+
+.connect p {
+	margin: 0;
+	color: white;
+}
+
+.connect a:link {
+	color: #fff;
 }
 
 .social {
@@ -209,4 +313,8 @@ footer {
 
 .social img {
 	padding: 20px;
+}
+
+.xmark {
+	position: absolute;
 }
