@@ -41,7 +41,7 @@ h5 {
 
 p {
 	font-family: 'Poppins', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 300;
 	line-height: 2;
 	color: #4A4A4A;	
@@ -88,6 +88,10 @@ a:visited {
 	background-color: #F6F6F6;
 	padding: 20px 40px 60px 40px;
 	background-color: #F6F6F6;
+}
+
+.sbcs-introcopy {
+	font-size: 20px;
 }
 
 .button {
