@@ -192,30 +192,15 @@ a:visited {
 .about {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
 	grid-gap: 20px;
 }
 
-.worklife {
-	display: flex;
-	background-color: #F6F6F6;
-}
-
-.worklife-copy {
-	padding: 50px 50px 50px 50px;
+.about span {
+	font-weight: 700;
 }
 
 .worklife-caption {
 	display: none;
-}
-
-.funfacts {
-	display: flex;
-	background-color: #F6F6F6;
-}
-
-.funfacts-copy {
-	padding: 50px 50px 50px 50px;
 }
 
 .funfacts-caption {
@@ -233,6 +218,14 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	position: relative;
+}
+
+.xmark {
+	position: absolute;
+	top: -50px;
+	left: 40%;
+
 }
 
 /*
@@ -426,8 +419,9 @@ footer {
 		background-color: #F6F6F6;
 	}
 
-	.worklife-tilt img {
+	.worklife-steps img {
 		display: block;
+
 	}
 
 	.worklife-copy {
@@ -436,10 +430,6 @@ footer {
 
 	.worklife-caption {
 		display: none;
-	}
-
-	.worklife-tilt {
-		display: block;
 	}
 
 	.funfacts {
@@ -451,16 +441,12 @@ footer {
 		padding: 50px 50px 50px 50px;
 	}
 
-	.funfacts-tilt img {
+	.funfacts-butcher img {
 		display: block;
 	}
 
 	.funfacts-caption {
 		display: none;
-	}
-
-	.funfacts-tilt {
-		display: block;
 	}
 
 
