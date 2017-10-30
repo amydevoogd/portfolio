@@ -1,3 +1,13 @@
+/* body */
+
+* {
+	 box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
 /* fonts */
 
 h1 {
@@ -40,7 +50,6 @@ p {
 	color: #4A4A4A;	
 }
 
-
 /* links */
 
 a {
@@ -56,42 +65,34 @@ a:visited {
 	color: #4A4A4A;
 }
 
-
-/* grid */
-
-* {
-	 box-sizing: border-box;
-}
-
-body {
-	margin: 0;
-}
-
-
 /* hero */
 
-#me {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: left;
-	background-image: url('../assets/portrait-min.jpg');
-	background-color: #D4503E;
+.hero-copy {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 30px;
+	background-color: #f6f6f6;
+}
+
+.hero-copy h1 {
+	font-size: 30px;
+}
+
+.hero-copy h2 {
+	font-size: 54px;
+	text-align: center;
 }
 
 .hero-copy .styletwo {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
-	font-size: 80px;
+	font-size: 54px;
 	text-align: right;
 }
 
 .hero-copy p {
-	font-size: 18px;
-}
-
-.hero-copy {
-	padding: 100px 120px;
-	background: #f6f6f6;
+	font-size: 16px;
 }
 
 .hero-zest {
@@ -104,7 +105,6 @@ body {
 	height: 100%;
 	display: block;
 }
-
 
 /* projects */
 
@@ -189,19 +189,25 @@ body {
 	margin: 0;
 }
 
-
 /* about */
 
-.about span {
-	font-weight: 700;
+.worklife {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
 }
 
-.worklife {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #F6F6F6;
+.steps-small {
+
+}
+
+.steps-small img {
+	width: 100%;
+	height: 100%;
+}
+
+.worklife span {
+	font-weight: 700;
 }
 
 .worklife-copy {
@@ -209,15 +215,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	padding: 30px;
-	max-width: 500px;
-	margin: auto;
-	padding: 30px;
-}
-
-.worklife-steps img {
-	width: 100%;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	background-color: #F6F6F6;
 }
 
 .worklife-caption {
@@ -225,11 +223,9 @@ body {
 }
 
 .funfacts {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #F6F6F6;
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-top: 20px;
 }
 
 .funfacts-copy {
@@ -237,22 +233,21 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	padding: 30px;
-	max-width: 500px;
-	margin: auto;
-	padding: 30px;
+	background-color: #F6F6F6;
 }
 
-.funfacts-butcher img {
+.butcher-small {
+	margin-top: 20px;
+}
+
+.butcher-small img {
 	width: 100%;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	border-color: white;
+	height: 100%;
 }
 
 .funfacts-caption {
 	display: none;
 }
-
 
 /* footer */
 
@@ -271,18 +266,16 @@ footer {
 	position: absolute;
 	top: -50px;
 	left: 40%;
+	z-index: 2;
 }
 
-/*
 .horizonal-line {
 	border: 0;
 	width: 100%;
 	border-bottom: 7px solid white;
 	position: relative;
-	top: -100px;
-}
-*/
-
+	top: -90px;
+	z-index: 1;
 }
 
 .connect {
@@ -308,21 +301,19 @@ footer {
 }
 
 .social img {
-	padding: 25%;
+	padding: 15px;
 }
 
 
 @media(min-width: 768px) {
 
-	/* grid */
+	/* hero */
 
-	.wrapper {
+	.hero {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 20px;
 	}
-
-	/* hero */
 
 	#me {
 		grid-row: 1 / 3;
@@ -335,10 +326,18 @@ footer {
 
 	.hero-copy {
 		grid-column: 2 / 4;
-		padding: 100px 120px;
+		padding: 100px 70px;
 		background: #f6f6f6;
 	}
 
+	.hero-copy h1 {
+		font-size: 40px;
+	}
+
+	.hero-copy h2 {
+		font-size: 90px;
+		text-align: left;
+	}
 
 	.hero-copy .styletwo {
 		font-family: 'Poppins', sans-serif;
@@ -362,7 +361,6 @@ footer {
 		display: block;
 	}
 
-
 	/* projects */
 
 	.projects {
@@ -370,6 +368,8 @@ footer {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 
 	.projects span {
@@ -382,9 +382,6 @@ footer {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-	}
-
-	.project-intro p {
 	}
 
 	.projects img {
@@ -404,6 +401,8 @@ footer {
 		justify-self: center;
 		align-self: center;
 		text-align: center;
+		padding: 20px;
+		background-color: 
 	}
 
 	.spacebar-copy p, h4 {
@@ -446,25 +445,48 @@ footer {
 
 	/* about */
 
-	.about {
-		grid-column: 1 / -1;
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr;
-		grid-gap: 20px;
+	.steps-small {
+		display: none;
+	}
+
+	.butcher-small {
+		display: none;
 	}
 
 	.worklife {
-		display: flex;
-		background-color: ;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		justify-items: center;
+		background: #F6F6F6;
 	}
 
-	.worklife-steps img {
-		display: block;
+	.worklife-steps {
+	    width: 100%;
+	    height: 100%;
+	    margin: 0 20px 0 -120px;
+	    -webkit-transform: skew(15deg);
+	    -moz-transform: skew(15deg);
+	    -o-transform: skew(15deg);
+	    transform: skew(15deg);
+	    border-right: 20px solid white;
+	    overflow:hidden;
+	    position:relative;
 	}
 
-	.worklife-copy {
-		padding: 50px 50px 50px 50px;
+	.steps {
+		background-image: url('../assets/steps-notilt-min.jpg');
+    	position: absolute;
+    	background-repeat: no-repeat;
+		background-size: cover;
+		background-position: left;
+	    top: -30px;
+	    left: -30px;
+	    right: -100px;
+	    bottom: -0px;
+        -webkit-transform: skew(-15deg);
+		-moz-transform: skew(-15deg);
+        -o-transform: skew(-15deg);
+        transform: skew(-15deg);;
 	}
 
 	.worklife-caption {
@@ -472,22 +494,42 @@ footer {
 	}
 
 	.funfacts {
-		display: flex;
-		background-color: #F6F6F6;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		justify-items: center;
+		background: #F6F6F6;
+		border-top: 20px solid white;
+		margin-top: 0px;
 	}
 
-	.funfacts-copy {
-		padding: 50px 50px 50px 50px;
+	.funfacts-butcher {
+	    width: 100%;
+	    height: 100%;
+	    margin: 0 0 0 120px;
+	    -webkit-transform: skew(15deg);
+	    -moz-transform: skew(15deg);
+	    -o-transform: skew(15deg);
+	    transform: skew(15deg);
+	    border-left: 20px solid white;
+	    overflow: hidden;
+	    position: relative;
 	}
 
-	.funfacts-butcher img {
-		display: block;
+	.butcher {
+		background-image: url('../assets/butcher-notilt-min.jpg');
+    	position: absolute;
+    	background-repeat: no-repeat;
+		background-size: cover;
+		background-position: left;
+	    top: 0px;
+	    left: -70px;
+	    right: 60px;
+	    bottom: 0px;
+        -webkit-transform: skew(-15deg);
+		-moz-transform: skew(-15deg);
+        -o-transform: skew(-15deg);
+        transform: skew(-15deg);
 	}
-
-	.funfacts-caption {
-		display: none;
-	}
-
 
 
 }
