@@ -63,6 +63,10 @@ a:visited {
 	 box-sizing: border-box;
 }
 
+body {
+	margin: 0;
+}
+
 
 /* hero */
 
@@ -117,7 +121,6 @@ a:visited {
 .project-intro {
 	grid-column: 1;
 	grid-row: 1;
-	background-color: #e5e5e2;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -189,18 +192,61 @@ a:visited {
 
 /* about */
 
-.about {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-gap: 20px;
-}
-
 .about span {
 	font-weight: 700;
 }
 
+.worklife {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #F6F6F6;
+}
+
+.worklife-copy {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 30px;
+	max-width: 500px;
+	margin: auto;
+	padding: 30px;
+}
+
+.worklife-steps img {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 .worklife-caption {
 	display: none;
+}
+
+.funfacts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #F6F6F6;
+}
+
+.funfacts-copy {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 30px;
+	max-width: 500px;
+	margin: auto;
+	padding: 30px;
+}
+
+.funfacts-butcher img {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-color: white;
 }
 
 .funfacts-caption {
@@ -225,7 +271,6 @@ footer {
 	position: absolute;
 	top: -50px;
 	left: 40%;
-
 }
 
 /*
@@ -266,11 +311,6 @@ footer {
 	padding: 25%;
 }
 
-/*
-.xmark {
-	position: absolute;
-}
-*/
 
 @media(min-width: 768px) {
 
@@ -416,12 +456,11 @@ footer {
 
 	.worklife {
 		display: flex;
-		background-color: #F6F6F6;
+		background-color: ;
 	}
 
 	.worklife-steps img {
 		display: block;
-
 	}
 
 	.worklife-copy {
