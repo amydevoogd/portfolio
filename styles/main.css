@@ -533,6 +533,10 @@ footer {
 	    position: relative;
 	}
 
+	.funfacts-copy {
+		margin-left: 30px;
+	}
+
 	.butcher {
 		background-image: url('../assets/butcher-min.jpg');
     	position: absolute;
