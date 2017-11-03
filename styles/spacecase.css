@@ -231,7 +231,7 @@ a:visited {
 }
 
 
-/* brand and logo */
+/* branding */
 
 .sb-brand-final {
 	display: flex;
@@ -247,6 +247,14 @@ a:visited {
 
 /* design */
 
+.sb-design img {
+	width: 100%;
+}
+
+.sb-bardesign img {
+	padding: 12px;
+}
+
 .sb-design-ingredients {
 	display: flex;
 	flex-wrap: wrap;
@@ -261,12 +269,12 @@ a:visited {
 	align-items: center;
 }
 
-.sb-bardesign img {
-	padding: 12px;
-}
-
 
 /* development */
+
+.sb-development img {
+	width: 100%;
+}
 
 .sb-devpix {
 	display: flex;
@@ -512,7 +520,6 @@ footer {
 	}
 
 	.sb-development img {
-		height: 100%;
     	width: 100%;
 	}
 
