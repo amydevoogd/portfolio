@@ -476,7 +476,6 @@ footer {
 	}
 
 	.sb-brand img {
-		height: 100%;
     	width: 100%;
     	display: block;
     }
@@ -490,7 +489,6 @@ footer {
 	}
 
     .sb-design-ingredients img {
-		height: 100%;
     	width: 100%;
 	}
 
@@ -527,7 +525,6 @@ footer {
 
 	.sb-conclusion-quotes {
 		display: grid;
-		grid-gap: 20px;
 		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 		grid-gap: 20px;
 		justify-items: center;
@@ -540,6 +537,7 @@ footer {
 
 	.sb-conclusion-quotes span {
 		font-style: oblique;
+		font-weight: 300;
 	}
 
 }
