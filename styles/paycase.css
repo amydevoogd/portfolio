@@ -361,6 +361,10 @@ a:visited {
 
 /* conclusion */
 
+.conclusion {
+	padding-bottom: 30px;
+}
+
 
 /* footer */
 
@@ -671,7 +675,9 @@ footer {
 		display: block;
 		grid-column: 1;
 		text-align: center;
-		writing-mode: sideways-lr;
+		writing-mode: vertical-rl;
+		transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
 	}
 
 	.positive h4 {
