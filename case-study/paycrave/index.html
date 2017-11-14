@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 
-	<title>Amy DeVoogd | Spacebar Case Study</title>
+	<title>Amy DeVoogd | Paycrave Case Study</title>
 
 <!-- Google fonts -->
 
@@ -15,7 +15,7 @@
 
 <!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
-	<link rel="stylesheet" type="text/css" href="../../styles/spacecase.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/paycase.css">
 
 <!-- favicon -->
 	<link rel="shortcut icon" type="image/ico" href="assets/favicon.ico"/>
@@ -28,8 +28,8 @@
 
 	<div id="sideNavigation" class="sidenav">
 	 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="close navigation">&times;</a>
-	  	<a href="https://amydevoogd.github.io/portfolio/">Home</a>
-	  	<a href="#">Next Case Study</a>
+	  	<a href="../../">Home</a>
+	  	<a href="../spacebar">Next Case Study</a>
 	  	<a href="mailto:amy@devoogd.com">Connect</a>
 	</div>
 	 
@@ -42,32 +42,32 @@
 
 <!-- intro -->
 
-	<section class="sb-intro">
+	<section class="intro">
 
-		<div class="sb-introleft"></div>
+		<div class="introleft"></div>
 
 		<h1>CASE STUDY</h1>
 
-		<div class="sb-introcopy">
+		<div class="introcopy">
 
-			<h2>Spacebar</h2>
+			<h2>Paycrave</h2>
 
-			<p>The energy bar market is bursting with sweetened bars targeting athletes and fitness enthusiasts. <span>Spacebar</span> aims to be the rare savory bar, aimed at busy professionals, specifically working in tech.</p>
+			<p>This challenge was part of a nine-month mentorship I completed in 2017. The logo, color palette and typography specs were provided, placing the focus of my work on research, application flow and screen design.</p>
 
 			<div class="button">
-				<a href="https://amydevoogd.github.io/product-showcase/"><p>visit the website</p></a>
+				<a href="https://invis.io/WYBT43PG3" target="blank"><p>see the prototype</p></a>
 			</div>
 		</div>
 
-		<div class="sb-hero">
-			<img src="../../assets/sb-hero-min.jpg" alt="A laptop on a table in an office with the Spacebar website on the screen.">
+		<div class="hero">
+			<img src="../../assets/pc-hero-min.jpg" alt="A person navigating an app on their phone.">
 		</div>
 			
-		<div class="sb-challenge">
+		<div class="challenge">
 			<div>
-				<p><span>META-CHALLENGE</span> invent, design and brand a product.</p>
-				<p><span>UNDERLYING TASK</span> design and develop a website to showcase that product.</p>
-				<p><span>MY ROLES</span> research, branding, design, development and implementation.</p>
+				<p><span>META-CHALLENGE</span> learn the basics of application design.</p>
+				<p><span>UNDERLYING TASK</span> design a food truck application prototype for iOS.</p>
+				<p><span>MY ROLES</span> digital product research and screen design.</p>
 			</div>
 		</div>
 
@@ -75,141 +75,179 @@
 
 <!-- main -->
 
-	<div class="sb-main">	
+	<div class="main">	
 
 <!-- research -->
 
 		<section class="research">
 
-			<div class="sb-main-copy">
+			<div class="main-copy">
 				<h3>Competitive Analysis</h3>
-				<p>The energy bar market seems ready for a savory, nutritious alternative given it’s strength—doubling yearly since 2015—and recent adverse publicity regarding the sugar content and nutritional value of some bars. The introduction of meat bars, such as <span>Hershey’s Krave</span> (in blueberry barbeque beef) and <span>General Mills’ Epic Bar</span> (in bison, salmon and venison) seems to bear this out. Interestingly, these newcomers aim not for the athlete, but for the average semi-active consumer. Additionally, consumers I surveyed pointed toward healthy ingredients (100%) and taste (81%) as top attributes for selecting bars, with fitness promise ranking significantly lower (25%).</p>
+				<p>Preliminary research helped me to determine project requirements. I found that a small percentage (3%) of the people I surveyed had used a food truck finding app, while most (70%) had used food delievery apps such as <span>GrubHub</span> or <span>UberEATS</span>. Three-quarters (75%) of respondents found an easy payment process to be the best part of using their app of choice, while almost as many (64%) complained that food menus were confusing or inaccurate.</p>
 			</div>
 
 			<div class="survey-graphic">
+
+				<div class="survey-intro">
+					<p>Since only three percent of survey respondents had ever used a food truck finding app, I scoured user reviews of existing food truck finding apps for clues as to what was working and what was not.</p>
+				</div>
 				
-				<div class="survey-statistic">
-					<img src="../../assets/sb-survey-woman-min.svg" alt="drawing of a woman representing a survey participant">
-					<p>Energy & nutrition bar consumption in the U.S. is highest among 25-54 year olds.</p>
+				<div class="survey-border-01">
+					<div class="survey-quote">
+						<p>Would be great if trucks could be <span>sorted by distance</span>. You have to scroll through the entire day to see what’s around and close by. <span>Show trucks by distance from my location.</span></p>
+					</div>
 				</div>
 
-				<div class="survey-chart">
-					<img src="../../assets/chart-min.svg" alt="bar chart">
-					<p>When asked to choose the top three factors that lead to the purchase of an energy bar, 100% of those surveyed selected ingredients, 81% selected taste, 25% selected fitness promise and 6% selected packaging.</p>
-	  			</div>
+				<div class="quoter01"><img src="../../assets/quoter01.svg"></div>
+			
+				<div class="survey-border-02">
+					<div class="survey-quote">
+						<p>When the app's information is correct it's great, but <span>a good deal of the time the information is incorrect</span>. Constantly shows trucks as open that aren't, and often doesn't list trucks that are very popular and well known.</p>
+					</div>
+				</div>
+
+				<div class="quoter02"><img src="../../assets/quoter02.svg"></div>
+				
+				<div class="survey-border-03">
+					<div class="survey-quote">
+						<p>Features work great but there is so much more it could do. I would really like to <span>search by location and date</span>; even better would be <span>notifications</span> for which truck will be at my school the next day.</p>
+					</div>
+				</div>
+
+				<div class="quoter03"><img src="../../assets/quoter03.svg"></div>
 
 			</div>
 
-			<div class="sb-main-copy">
+			<div class="main-copy">
+				<h3>SWOT analysis</h3>
+				<p>I created a SWOT matrix combining data from three of the most popular food truck finding apps. The biggest takeaway from this, in terms of design, was that an intuitive and clear flow was important.</p>
+			</div>
+
+			<div class="swot">
+
+				<div class="internal"><h4>INTERNAL</h4></div>
+
+				<div class="positive"><h4>POSITIVE</h4></div>
+
+				<div class="negative"><h4>NEGATIVE</h4></div>
+
+				<div class="external"><h4>EXTERNAL</h4></div>
+
+				<div class="center">
+
+					<div class="strengths">
+						<h4>Strengths</h4>
+						<p><span>Functionality</span> easy to use. <span>Quality</span> well-designed. <span>Experience/Expertise</span> developed through large corporation. <span>Network</span> large database, connects customers nationally. <span>Partnerships</span> event promotions create wide visibility.</p>
+					</div>
+
+					<div class="weaknesses">
+						<h4>Weaknesses</h4>
+						<p><span>Limited network</span> only available in select cities. <span>Accuracy</span> relies on vendor participation. <span>Design</span> not intuitive. <span>Information</span> not enough vendor detail. <span>Reputation</span> purpose ineffectively communicated due to expansive scope of company’s goals. <span>User focus</span> lack of specific target market.</p>
+					</div>
+
+					<div class="opportunities">
+						<h4>Opportunities</h4>
+						<p><span>Customer loyalty</span> well-positioned for growth through positive user reviews. <span>Marketing</span> large corporate backing could create lots of buzz. <span>Growing market</span> positioning as intermediary for events could broaden app’s appeal.</p>
+					</div>
+
+					<div class="threats">
+						<h4>Threats</h4>
+						<p><span>Timing</span> still in BETA version on Android a year plus later. <span>Focus</span> lack of attention to functionality/design could undermine success. <span>Direction</span> too broad a definition of app’s functionality may confuse users.</p>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="main-copy">
 				<h3>Personas</h3>
-				<p>In addition to office professionals, I rounded out my personas with a tangential group: busy people, such as working parents, who don’t necessarily work in an office environment but are often too busy to stop for a meal. I imagined a subsidiary advertising campaign that could target this group.</p>
+				<p>Personas for this project not only represented a variety of potential food truck customers, but food truck owners as well.</p>
 			</div>
 
-			<div class="sb-personas">
-				<img src="../../assets/sb-personas-min.jpg" alt="a collage of three graphics representing three personas">
+			<div class="personas">
+				<img src="../../assets/pc-personas-min.jpg" alt="a collage of four graphics representing four personas">
 			</div>
 
 		</section>
 
-<!-- branding -->
 
-		<section class="sb-brand">
+<!-- flows -->
 
-			<div class="sb-main-copy">
-				<h3>Brand name</h3>
-				<p>I began by brainstorming with word lists and mind-maps, flushing out obvious references and hacking into more inventive ideas, with graphic possibilities and marketing connections hovering in the wings. After multiple surveys, the name <span>Spacebar</span> emerged as the clear choice. A keyboard’s spacebar is used to create a space, or to pause music or video, connecting with the idea of pausing and creating a space to eat. </p>
+		<section class="flows">
+
+			<div class="main-copy">
+				<h3>User stories + task flows</h3>
+				<p>I wrote out numerous user stories and some basic task flows, which I then fleshed out as <span>Draw.io</span> user flow diagrams that I could refer to during design, and—ostensibly—development. </p>
 			</div>
 
-			<img src="../../assets/sb-brainstorm-min.jpg" alt="a pile of papers scattered across a table with words and mindmaps scribbled on them">
-
-			<div class="sb-main-copy">
-				<h3>Logo</h3>
-				<p>I envisioned a minimal, almost generic word mark for the logo. I searched through fonts that had a tech feel without being too obvious and settled on <span>Orator</span>, a monospace font originally designed for the <span>IBM Selectric</span> typewriter. I selected a gray similar to <span>Apple</span>’s space gray. I used the keyboard spacebar icon and played around with breaking the word in two. I narrowed down my designs and surveyed potential consumers, 52% of which chose the logo design that closely resembles a keyboard spacebar. Finally, I chose <span>Roboto</span> for the brand's secondary typeface.</p>
-			</div>
-
-			<div class="sb-brand-final">
-				<img src="../../assets/sb-logosheet-min.jpg" alt="a sheet of paper with logo ideas printed on it">
-				<img src="../../assets/sb-logo-min.jpg" alt="the final logo in several sizes with a color swatch and sample fonts">
-			</div>
+			<img src="../../assets/pc-userflows-min.jpg" alt="a user flow diagram">
 
 		</section>
 
 
 <!-- design -->
 
-		<section class="sb-design">	
+		<section class="design">	
 
-			<div class="sb-main-copy">
+			<div class="main-copy">
 				<h3>Design research</h3>
-				<p>Before I began package design, I researched existing products for ingredients, texture and flavor. I sampled a dozen or so bars, and created flavor profiles based on foods both popular and nourishing, working out hypothetical ingredients for each, as well as talking points for copy.</p>
+				<p>First person research involved visiting food trucks around the city, as well as downloading a dozen or so existing apps and documenting the ordering processes of each to determine features, as well as what worked and what didn’t.</p>
 			</div>
 
-			<div class="sb-design-ingredients">
-				<img src="../../assets/sb-ingr-min.jpg" alt="a photo of sheets of paper with ideas written on them and a pile of empty wrappers">
-				<img src="../../assets/sb-pkgsketch-min.jpg" alt="sketches and mockups of packaging ideas">
+			<div class="truckpic">
+				<img src="../../assets/pc-truck-min.jpg" alt="people standing in line at a food truck">
 			</div>
 
-			<div class="sb-main-copy">
-				<h3>Package design</h3>
-				<p>I mocked up multiple sizes and styles of packaging, deciding early on to go with a horizontal layout that mimicked the shape of a keyboard spacebar. I drew  loose vector icons that I used as a background pattern, and came up with a color palette. In the end, drawn icons and color seemed too much of a departure from my original generic concept. Many iterations later I settled on a white package with simple flavor-identifying shapes.</p>
+			<div class="main-copy">
+				<h3>Sketches + lo-fi wireframes</h3>
+				<p>I translated my design notes and user flow sketches created during the research phase into low-fidelity wireframes in <span>Balsamiq</span> that I used to create an <span>Invision</span> prototype that I could test with potential users. The results of those user tests informed several iterations of the flow design.</p>
 			</div>
 
-    		<div class="sb-bardesign">
-      			<img src="../../assets/sb-pizza-min.png" alt="spacebar packaging pizza flavor">
-      			<img src="../../assets/sb-curry-min.png" alt="spacebar packaging curry flavor">
-      			<img src="../../assets/sb-edamame-min.png" alt="spacebar packaging edamame flavor">
-      			<img src="../../assets/sb-burrito-min.png" alt="spacebar packaging burrito flavor">
-      		</div>
+			<div class="lofi">
+				<img src="../../assets/pc-sketches-min.jpg" alt="website design sketches">
+				<img src="../../assets/pc-lofi-min.jpg" alt="website low fidelity mockups">
+			</div>
+
+			<div class="main-copy">
+				<h3>Hi-fi mockups</h3>
+				<p>I designed high fidelity mockups in <span>Sketch</span> using the existing logo, color palette and typography specs that were provided. I studied and carefully followed <span>Apple’s Human Interface Guidelines</span>.</p>
+			</div>
+
+			<div class="hifi">
+				<img src="../../assets/pc-hires-min.jpg" alt="high fidelity mockups">
+			</div>
+
+			<div class="main-copy">
+				<h3>Prototype</h3>
+				<p>I created a prototype using <span>Invision</span> that I could use to survey and test potential users for feedback.</p>
+			</div>
+
+			<div class="protopix">
+				<img src="../../assets/pc-prototype-min.jpg" alt="high fidelity mockups">
+			</div>
 
 		</section>
 
-<!-- development -->
+<!-- testing -->
 
-		<section class="sb-development">		
+		<section class="testing">		
 
-			<div class="sb-main-copy">
-				<h3>Content</h3>
-				<p>With branding and package design complete, I focused on copy, which would inform the site's content areas. I invented testimonials by popular tech publications, designed a social media contest and created a tie-in with <span>Apple Watch</span>, with an app that could send alerts to users when it was time to eat. I sketched out rough flows that embodied these content areas which I used to render low-fidelity mockups in <span>Sketch</span>. I created an <span>Invision</span> prototype with two options and solicited feedback from fellow designers, who steered me in the direction of the more dynamic layout.</p>
+			<div class="main-copy">
+				<h3>User testing</h3>
+				<p>In addition to gathering feedback via <span>Typeform</span> and <span>Usabilityhub</span> surveys that I posted to <span>Reddit</span> and various <span>Slack</span> channels, I tested users in person as well. I watched as they moved through the prototype and interviewed them during the process. Several useful features came out of these conversations, such as the ability to re-order the same order, and allowing the app to alert users when their order is ready.</p>
 			</div>
 
-			<div class="sb-devpix">
-				<img src="../../assets/sb-sitesketch-min.jpg" alt="website design sketches">
-				<img src="../../assets/sb-lofiwires-min.jpg" alt="website low fidelity mockups">
-			</div>
-
-			<div class="sb-main-copy">
-				<h3>Development + implementation</h3>
-				<p>After extensive image research, I dropped my assets into <span>Sketch</span> and saved them out using image compressors to minimize file size. I iterated through a few high-fidelity mock-ups and solicited critique from potential consumers and colleagues. Feedback led me to consider whether the audience for the product was clear enough—I decided to use movement to express the brand more clearly, which I roughed out in an <span>Adobe After Effects</span> animation. Throughout development I shared my work-in-progress with colleagues who weighed in on various design and coding challenges. I used <span>CSS Grid Layout</span> combined with <span>Flexbox</span> for the structure of the site, and <span>Javascript</span> with the <span>Scrollmagic</span> and <span>GreenSock Animation Platform</span> libraries for the animation. I also made good use of browser development tools, particularly <span>Firefox</span>’s grid inspector and responsive design mode. </p>
-			</div>
-
-			<div class="sb-devmockups">
-				<img src="../../assets/sb-dev-mockups-min.jpg" alt="website high fidelity mockups">
-				<img src="../../assets/sb-dev-animate-min.jpg" alt="freeze frame of an animation idea">
-			</div>
+			<img src="../../assets/pc-usertest-min.jpg" alt="a person sitting at a desktop computer testing a prototype">
 
 		</section>
 
 <!-- conclusion -->
 
-		<section class="sb-conclusion">
+		<section class="conclusion">
 
-			<div class="sb-main-copy">
+			<div class="main-copy">
 				<h3>Conclusion</h3>
-				<p>I was glad that I wasn’t forced to make any major design compromises during the development process, which I anticipated might happen. I did have to adjust my animation plan—luckily, the result was a better fit in the end. After testing the site on <span>iPhone</span>, <span>Galaxy Note</span>, <span>iPad</span> and <span>iMac</span>, I shared it with a handful of users. Here are some of their comments:</p>
-			</div>
-
-			<div class="sb-conclusion-quotes">
-
-				<div class="sb-quote"><p>“Wow! This is great. The page is very clean and has great white space.”<br><span>Aidan</span></p></div>
-
-				<div class="sb-quote"><p>“Easy to navigate... I like the large text with nutritional info.”<br><span>Allison</span></p></div>
-
-				<div class="sb-quote"><p>“Your site looks amazing. Clean design and I love what you did with the shapes!”<br><span>Amanda</span></p></div>
-
-			</div>
-
-			<div class="sb-main-copy">
-				<p>Check out the <a href="https://amydevoogd.github.io/product-showcase/" target="_blank">live site</a> and the <a href="https://github.com/amydevoogd/product-showcase" target="_blank"><span>Github</span></a> repo.</p>
+				<p>I came out of this project with a real appreciation of Apple’s iOS Human Interface Guidelines as well as Google’s Material Design system. I also realized that spontaneous feedback gathered from in-person interviews can be invaluable. Check out the <a href="https://invis.io/WYBT43PG3" target="_blank"><span>prototype</span></a>.</p>
 			</div>
 
 		</section>
