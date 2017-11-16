@@ -89,7 +89,7 @@ a:visited {
 
 .hero-copy h2 {
 	font-size: 54px;
-	text-align: center;
+	text-align: left;
 }
 
 .hero-copy .styletwo {
@@ -97,10 +97,14 @@ a:visited {
 	font-weight: 300;
 	font-size: 54px;
 	text-align: right;
+	position: absolute;
+	left: 15%;
+	margin-right: 10px;
 }
 
 .hero-copy p {
 	font-size: 16px;
+	margin-top: 80px;
 }
 
 .hero-zest {
@@ -220,10 +224,18 @@ a:visited {
 	justify-content: center;
 	padding: 30px;
 	background-color: #F6F6F6;
+	position: relative;
 }
 
 .worklife-caption {
 	display: none;
+}
+
+.worklife-caption p {
+	font-size: 12px;
+	color: #fff;
+	text-align: left;
+	padding-left: 10px;
 }
 
 .funfacts {
@@ -362,14 +374,18 @@ footer {
 		font-weight: 300;
 		font-size: 80px;
 		text-align: right;
+		position: absolute;
+		left: 50%;
 	}
 
 	.hero-copy p {
 		font-size: 20px;
+		margin-top: 100px;
 	}
 
 	.hero-zest {
 		grid-column: 2 / 4;
+		grid-row: 2;
 		padding: 0;
 	}
 
@@ -504,11 +520,7 @@ footer {
         -webkit-transform: skew(-15deg);
 		-moz-transform: skew(-15deg);
         -o-transform: skew(-15deg);
-        transform: skew(-15deg);;
-	}
-
-	.worklife-caption {
-		display: none;
+        transform: skew(-15deg);
 	}
 
 	.funfacts {
