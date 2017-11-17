@@ -36,8 +36,8 @@
 
 <!-- sidenav -->
 
-	<div id="sideNavigation" class="sidenav">
-	 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="close navigation">&times;</a>
+	<div id="sideNavigation" class="sidenav" aria-hidden="true">
+	 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="navigation button">&times;</a>
 	 	<div class="links">
 		  	<a href="../../"><p>home</p></a>
 		  	<a href="../paycrave"><p>next case study</p></a>
@@ -46,11 +46,8 @@
 	</div>
 	 
 	<nav class="topnav">
-	  	<a href="#" onclick="openNav()" aria-label="open navigation">
-	    	<img src="../../assets/nav-icon.svg" alt="navigation icon">
-	  	</a>
+	  	<button role="button" onclick="openNav()" aria-label="navigation button"><img src="../../assets/nav-icon.svg" alt="navigation icon"></button>
 	</nav>
-
 
 <!-- intro -->
 
@@ -66,7 +63,7 @@
 
 			<p>The energy bar market is bursting with sweetened bars targeting athletes and fitness enthusiasts. <span>Spacebar</span> aims to be the rare savory bar, aimed at busy professionals, specifically working in tech.</p>
 
-			<div class="button">
+			<div class="project-link">
 				<a href="https://amydevoogd.github.io/product-showcase/" target="blank"><p>visit the website</p></a>
 			</div>
 		</div>
