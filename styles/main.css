@@ -4,6 +4,10 @@
 	 box-sizing: border-box;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 
 
 body {
@@ -365,14 +369,14 @@ footer {
 	}
 
 	.hero-copy h2 {
-		font-size: 90px;
+		font-size: 80px;
 		text-align: left;
 	}
 
 	.hero-copy .styletwo {
 		font-family: 'Poppins', sans-serif;
 		font-weight: 300;
-		font-size: 80px;
+		font-size: 70px;
 		text-align: right;
 		position: absolute;
 		left: 50%;
